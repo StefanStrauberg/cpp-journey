@@ -428,5 +428,9 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+# Скомпилированные бинарники без расширения (для Linux)
+main
+*.out
+
 # builded files
 [Bb]uild/
