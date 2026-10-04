@@ -1,18 +1,20 @@
 cmake_minimum_required(VERSION 3.20)
-project(cpp_vulkan_journey CXX)
+project(cpp_journey CXX)
 
-# c++23 - with fallback on c++20
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-# -std=c++23, instead of -std=gnu+23
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# enable warnings - in C++ it's crucial
-add_compile_options(
-  -Wall       # main warnings
-  -Wextra     # additional
-  -Wpedantic  # strictly according to the standard
-  -Wshadow    # catches variables shadowing
-  -Wconversion    # implicit type narrowing (in C++ this is a silent killer)
-)
+# Создаем таргеты
 add_executable(HelloWorld 01_HelloWorld/main.cpp)
+add_executable(NetCodeJourn 02_NetCodeJourn/main.cpp)
+
+# Настраиваем предупреждения (безопасно для всех ОС и компиляторов)
+if(MSVC)
+    target_compile_options(HelloWorld PRIVATE /W4)
+    target_compile_options(NetCodeJourn PRIVATE /W4)
+else()
+    set(MY_GCC_FLAGS -Wall -Wextra -Wpedantic -Wshadow -Wconversion)
+    target_compile_options(HelloWorld PRIVATE ${MY_GCC_FLAGS})
+    target_compile_options(NetCodeJourn PRIVATE ${MY_GCC_FLAGS})
+endif()
