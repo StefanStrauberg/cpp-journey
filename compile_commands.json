@@ -1,14 +1,8 @@
 [
 {
   "directory": "/home/ruslan/SourceCode/cpp-journey/build",
-  "command": "/usr/bin/g++ -g -std=c++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/HelloWorld.dir/01_HelloWorld/main.cpp.o -c /home/ruslan/SourceCode/cpp-journey/01_HelloWorld/main.cpp",
-  "file": "/home/ruslan/SourceCode/cpp-journey/01_HelloWorld/main.cpp",
-  "output": "CMakeFiles/HelloWorld.dir/01_HelloWorld/main.cpp.o"
-},
-{
-  "directory": "/home/ruslan/SourceCode/cpp-journey/build",
-  "command": "/usr/bin/g++ -g -std=c++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/NetCodeJourn.dir/02_NetCodeJourn/main.cpp.o -c /home/ruslan/SourceCode/cpp-journey/02_NetCodeJourn/main.cpp",
-  "file": "/home/ruslan/SourceCode/cpp-journey/02_NetCodeJourn/main.cpp",
-  "output": "CMakeFiles/NetCodeJourn.dir/02_NetCodeJourn/main.cpp.o"
+  "command": "/usr/bin/g++ -g -std=c++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -o CMakeFiles/game.dir/src/main.cpp.o -c /home/ruslan/SourceCode/cpp-journey/src/main.cpp",
+  "file": "/home/ruslan/SourceCode/cpp-journey/src/main.cpp",
+  "output": "/home/ruslan/SourceCode/cpp-journey/build/CMakeFiles/game.dir/src/main.cpp.o"
 }
 ]
